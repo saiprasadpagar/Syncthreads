@@ -4,7 +4,7 @@ const HeaderPage =()=>{
     return (<>
    
    <div  className="mainHeader">
-<h1 style= {{textAlign:"center"}}>RSR ENTERPRISES</h1>
+<h1 style= {{textAlign:"center"}}>Syncthreads Computing</h1>
 
 <nav>
 <div>
