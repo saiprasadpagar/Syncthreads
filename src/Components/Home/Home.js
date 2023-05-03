@@ -59,15 +59,16 @@ const HomePage = () => {
           <div className="box4" onClick={handleCard4}>
             <h2>Fetch API: Cart summary / payment (Async / Await)</h2>
             <h2>Use Demo Protected</h2>
+            <h2>UseNavigate & useLocation for Cards</h2>
           </div>
 
           <div className="box5" onClick={handleCard5}>
-            <h2>Use Navigation & useLocation</h2>
+            
           
           </div>
 
           <div className="box6" onClick={handleCard6}>
-          <h2>React Google Map</h2>
+          <h2>React Google Map NPM</h2>
           </div>
         </div>
       </main>
