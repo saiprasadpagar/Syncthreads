@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/******************Header styling********************/
+.mainHeader{
+  width: 100%;
+  height: 100px;
+  top: 0;
+  position: sticky;
+  background-color: rgb(105, 216, 231);
+  border:3px solid greenyellow;
+  box-shadow: rgb(71, 69, 69);
+  color: slateblue; 
+}
+
+/******************Navigation Button********************/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    /* align-content: stretch; */
+    align-items: flex-end;
+    /* flex-wrap: wrap; */
+}
+
+
+ul {
+  display: flex;
+  width: 30%;
+  
+  
+
+}
+li , .Link {
+  margin: 3px;
+  width: 50px;
+  padding: 7px 21px;
+  list-style-type: none;
+  text-decoration: none;
+  background-color: rgb(124, 233, 114);
+  border: 2px solid black;
+}
+
+li,.Link:hover , .btn-login:hover , 
+.box1:hover ,.box2:hover ,.box3:hover,
+.box4:hover {
+  background-color: rgb(226, 206, 247);
+  outline: .1rem solid rgb(0, 0, 0);
+}
+
+/******************Login Button********************/
+
+.btn-login{
+  margin-right: 8px;
+  width: 50px;
+  padding: 7px 21px;
+  list-style-type: none;
+  text-decoration: none;
+  background-color: rgb(124, 233, 114);
+  border: 2px solid black;
+  cursor: pointer;
+
+}
+
+/* -------------------------------Home CardContainer------------------------------------- */
+.CardContainer {
+  
+  cursor: pointer;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  /* height:500px; */
+  width : 100%;
+ margin-top: 5px;
+ 
+}
+
+.box1 {
+  border-radius: 9px;
+  background-color: crimson;
+  /* height: 10%; */
+  width: 49%;
+  height: 150px;
+}
+
+.box2 {
+  border-radius: 9px;
+  background-color: deeppink;
+  /* height: 10%; */
+  height:150px;
+  width: 49%;
+}
+
+.box3 {
+  border-radius: 9px;
+  background-color: rgb(0, 248, 25);
+  height:150px;
+  width: 49%;
+  margin-top: 5px;
+}
+
+.box4 {
+  border-radius: 9px;
+  background-color: rgb(217, 255, 0);
+  height:150px;
+  width: 49%;
+  margin-top: 5px;
+}
+.box5 {
+  border-radius: 9px;
+  background-color: rgb(145, 198, 0);
+  height:150px;
+  width: 49%;
+  margin-top: 5px;
+}
+.box6 {
+  border-radius: 9px;
+  background-color: rgb(255, 0, 183);
+  height:150px;
+  width: 49%;
+  margin-top: 5px;
+}
+
+
+
+
+
+/* *********Footer************* */
+
+.mainFooter{
+  position:fixed;
+  background-color: aqua;
+color:red;
+text-align: center;
+border: 2px solid rgb(0, 255, 38);
+bottom: 2px;
+height: 5vh;
+width: 100%; 
+
+}
+
+/* ----Map------------ */
+.map-container{
+width: 100%;
+}
+
+
+
+/* .FooterNav{
+
+  margin: 3px;
+  width: 50px;
+  padding: 8px;
+  list-style-type: none;
+  text-decoration: none;
+  background-color: rgb(124, 233, 114);
+  border: 2px solid rgb(255, 0, 0);
+} */
+/* **************Services******************** */
+
+/* .main-services{
+background-color: mediumslateblue;
+height: 20vh;
+width:300px;
+
+
+} */
+
+/* **************Dropdown******************** */
+
+.dropbtn {
+  background-color: hwb(101 0% 2%);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
