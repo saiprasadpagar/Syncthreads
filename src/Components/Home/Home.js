@@ -64,7 +64,7 @@ const HomePage = () => {
 
           <div className="box5" onClick={handleCard5}>
             
-          
+          <h2>Form Validation</h2>
           </div>
 
           <div className="box6" onClick={handleCard6}>
