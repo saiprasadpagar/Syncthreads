@@ -164,6 +164,30 @@ td {
   border: 2px solid black;
 }
 
+
+/* --------------------------Todo List--------------------------------------------- */
+
+.todo-cards{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+border-radius: 2px;
+
+}
+
+.todo-li{
+  height: 150px;
+  width:15%;
+  margin: 5px 5px;
+  background-color: deeppink;
+  border: 2px solid black;
+  border-radius: 9px;
+ word-wrap: break-word;
+ cursor: pointer;
+}
+
+
 /* .FooterNav{
 
   margin: 3px;

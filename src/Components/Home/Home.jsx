@@ -58,7 +58,7 @@ const HomePage = () => {
 
           <div className="box4" onClick={handleCard4}>
             <h2>Fetch API: Cart summary / payment (Async / Await)</h2>
-            <h2>Use Demo Protected</h2>
+            <h2>Use Protected Routing</h2>
             <h2>UseNavigate & useLocation for Cards</h2>
           </div>
 
