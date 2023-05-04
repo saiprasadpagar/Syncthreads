@@ -156,6 +156,14 @@ td {
   border: 1px solid hsl(0, 0%, 0%);
 }
 
+/* -------------------------Form Validation---------------------------- */
+
+.form-container{
+  width: 30%;
+  background-color: aqua;
+  border: 2px solid black;
+}
+
 /* .FooterNav{
 
   margin: 3px;
