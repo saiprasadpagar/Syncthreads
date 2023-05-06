@@ -167,26 +167,44 @@ td {
 
 /* --------------------------Todo List--------------------------------------------- */
 
-.todo-cards{
+.todo-parent{
   display: flex;
   flex-wrap: wrap;
+  /* justify-content:flex-start; */
   width: 100%;
   text-align: center;
 border-radius: 2px;
 
 }
 
-.todo-li{
-  height: 150px;
-  width:15%;
+.todo-child{
+  position: relative;
+  height: 100px;
+  width:11%;
   margin: 5px 5px;
   background-color: deeppink;
   border: 2px solid black;
   border-radius: 9px;
  word-wrap: break-word;
  cursor: pointer;
+ /* opacity: 0.3; */
 }
 
+
+.todo-cross-button{
+position: absolute;
+background-color: rgb(124, 233, 114);
+right: 0px;
+}
+
+.todo-delete-button{
+  position: absolute;
+  background-color: rgb(124, 233, 114);
+  bottom: 0px;
+  right: 0;
+  
+  
+  }
 
 /* .FooterNav{
 
