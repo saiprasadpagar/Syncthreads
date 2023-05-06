@@ -1,16 +1,16 @@
 import { React, useEffect, useState } from "react";
-
+import { v4 as uuidv4 } from 'uuid';
 const Card4 = () => {
-  const [currentValue, setCurrentValue] = useState("");
+  const [currentValue, setCurrentValue] = useState();
   const [data, setData] = useState([]);
 
-  // useEffect(() => {
-  //   console.log(data);
-  // }, [data]);
+  useEffect(() => {
+    console.log(data);
+  }, [data]);
 
   const onChangeHandler = (event) => {
     const { value } = event.target;
-    setCurrentValue(value);
+    setCurrentValue({...currentValue , name:value , id:uuidv4()});
   };
 
   const addHandler = () => {
@@ -19,27 +19,15 @@ const Card4 = () => {
 
 
 
-//method 2
-  const handleDelete = (index) => { 
-    const cloneData = JSON.parse(JSON.stringify(data)); //Deep Copy
-   let newData = cloneData.splice(index, 1 )   
 
-console.log(data)
-console.log(newData)
-   
-setData(cloneData)
-return data
-  }
-    
-    
-    //method:1
-  //   const newTodos = data.filter((elem, i) => {
-  //     return i !== index;
-  //   });
+  const handleDelete = (id) => { 
+    const newTodos = data.filter((elem) => {
+      return elem.id!== id;
+    }); 
 
-    // setData(newTodos);
-  //   // return data;
-  // };
+    setData(newTodos);
+    
+  };
 
   return (
     <>
@@ -55,17 +43,15 @@ return data
 
       <div className="todo-grantparent">
         <div className="todo-parent">
-          {data.map((elem, index) => {
+          {data.map((elem) => {
             return (
               <>
-                <div id={index} className="todo-child">
-                  {`${elem} index = ${index}`}
+                <div  className="todo-child">
+                  {elem.name}
                   <button className="todo-cross-button">X</button>
 
                   <button
-                    onClick={() => {
-                      handleDelete(index);
-                    }}
+                    onClick={()=>{handleDelete(elem.id)}}
                     className="todo-delete-button"
                   >
                     Delete
