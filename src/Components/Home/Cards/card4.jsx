@@ -22,7 +22,7 @@ const Card4 = () => {
 //method 2
   const handleDelete = (index) => { 
     const cloneData = JSON.parse(JSON.stringify(data)); //Deep Copy
-   let newData = cloneData.splice(index , 1 )   
+   let newData = cloneData.splice(index, 1 )   
 
 console.log(data)
 console.log(newData)
