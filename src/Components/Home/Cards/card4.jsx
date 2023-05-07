@@ -23,11 +23,14 @@ const Card4 = () => {
   };
 
   const handleDelete = (id) => {
-    const newTodos = data.filter((elem) => {
-      return elem.id !== id;
-    });
+    let result = window.confirm("Press a button!");
+    if (result === true) {
+      const newTodos = data.filter((elem) => {
+        return elem.id !== id;
+      });
 
-    setData(newTodos);
+      setData(newTodos);
+    }
   };
 
   return (
