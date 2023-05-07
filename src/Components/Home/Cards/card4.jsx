@@ -1,32 +1,33 @@
 import { React, useEffect, useState } from "react";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 const Card4 = () => {
-  const [currentValue, setCurrentValue] = useState();
+  const [currentValue, setCurrentValue] = useState("");
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    console.log(data);
-  }, [data]);
+    console.log(currentValue);
+  }, [currentValue]);
 
   const onChangeHandler = (event) => {
     const { value } = event.target;
-    setCurrentValue({...currentValue , name:value , id:uuidv4()});
+    setCurrentValue(value);
   };
 
   const addHandler = () => {
-    setData([...data, currentValue]);
+    if (currentValue == "") {
+      alert("Enter Value");
+    } else {
+      setData([...data, { id: uuidv4(), name: currentValue }]);
+      setCurrentValue("");
+    }
   };
 
-
-
-
-  const handleDelete = (id) => { 
+  const handleDelete = (id) => {
     const newTodos = data.filter((elem) => {
-      return elem.id!== id;
-    }); 
+      return elem.id !== id;
+    });
 
     setData(newTodos);
-    
   };
 
   return (
@@ -37,7 +38,12 @@ const Card4 = () => {
         Delete Functionalitiy & When click on card get popup with pop delete
         cross button
       </p>
-      <input typr="text" onChange={onChangeHandler} />
+      <input
+        typr="text"
+        onChange={onChangeHandler}
+        placeholder="Add Dotos"
+        value={currentValue}
+      />
       <button onClick={addHandler}>Add List</button>
       <br />
 
@@ -46,12 +52,14 @@ const Card4 = () => {
           {data.map((elem) => {
             return (
               <>
-                <div  className="todo-child">
+                <div className="todo-child">
                   {elem.name}
                   <button className="todo-cross-button">X</button>
 
                   <button
-                    onClick={()=>{handleDelete(elem.id)}}
+                    onClick={() => {
+                      handleDelete(elem.id);
+                    }}
                     className="todo-delete-button"
                   >
                     Delete
