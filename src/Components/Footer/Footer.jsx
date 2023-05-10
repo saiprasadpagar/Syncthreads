@@ -18,7 +18,7 @@ const FooterPage =()=>{
     return (<>
     
     <footer className = "mainFooter">
-<p> All Rightds Recived &copy; Syncthreads Computing</p>
+<p> All Rights Recived &copy; to Saiprasad Pagar </p>
 <nav>
 <ul >
 <Link to="about" > About</Link>

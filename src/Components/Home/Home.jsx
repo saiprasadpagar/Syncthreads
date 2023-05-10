@@ -38,20 +38,26 @@ const HomePage = () => {
             <p>Routing: Do not use private routing</p>
             <p>Login: Login then route on Home page</p>
             <p>Login: If not login then msg user not login</p>
-        
+
             <p>Responsive: MediaQury / Flex, Grid</p>
           </div>
           <div className="box2" onClick={handleCard2}>
-          <h2>Google-maps-react</h2>
-          <h2>Leaflet</h2>
-        <h2>Mapbox-gl JS API</h2>
-            
-            <p>Other MapIntegration=: Leaflet/Mapbox GL JS/ MapGL/OpenLayers/Google
-              Maps React/React Simple Maps/React-map-gl/MapKit JS
+            <h2>Redux State Managment Tool</h2>
+            <h2>Google-maps-react</h2>
+            <h2>Leaflet</h2>
+            <h2>Mapbox-gl JS API</h2>
+
+            <p>
+              Other MapIntegration=: Leaflet/Mapbox GL JS/
+              MapGL/OpenLayers/Google Maps React/React Simple
+              Maps/React-map-gl/MapKit JS
             </p>
           </div>
           <div className="box3" onClick={handleCard3}>
-            <h2>Store User Data in Database</h2>
+            <h2>
+              Redux Store: Access Data Globally(useSelector()) &
+              Update(useDispatch())
+            </h2>
             <h2>GraphQL</h2>
             <p>Create one Sing up Form</p>
           </div>
@@ -63,12 +69,11 @@ const HomePage = () => {
           </div>
 
           <div className="box5" onClick={handleCard5}>
-            
-          <h2>Form Validation</h2>
+            <h2>Form Validation</h2>
           </div>
 
           <div className="box6" onClick={handleCard6}>
-          <h2>React Google Map NPM</h2>
+            <h2>React Google Map NPM</h2>
           </div>
         </div>
       </main>
